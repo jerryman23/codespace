@@ -6,12 +6,9 @@ int main(void)
     int n = get_int("Size: ");
     spawn(function()
     {
-        while (true)
+        while (n > 20)
         {
-            if (n > 40)
-            {
-
-            }
+            n -= 1;
         }
     })
     spawn(function()
