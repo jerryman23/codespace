@@ -4,22 +4,12 @@
 int main(void)
 {
     int n = get_int("Size: ");
-    spawn(function()
+    for (int i = 0; i < n; i++)
     {
-        while (n > 20)
+        for (int j = 0; j < n; j++)
         {
-            n -= 1;
+            printf("#");
         }
-    })
-    spawn(function()
-    {
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < n; j++)
-                {
-                    printf("#");
-                }
-                printf("\n");
-            }
-    })
+        printf("\n");
+    }
 }
