@@ -2,10 +2,10 @@
 
 int main(void)
 {
-    int row = 5;
-    for (int i = 0; i < row; i++)
+    const int n = 3;
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < row; j++)
+        for (int j = 0; j < n; j++)
         {
             printf("#");
         }
