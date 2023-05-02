@@ -4,7 +4,7 @@
 int main(void)
 {
     int n = get_int("Size: ");
-    if (n < 1)
+    while (n < 1)
     {
         n = get_int("Size: ");
     }
