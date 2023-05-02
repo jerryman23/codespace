@@ -4,12 +4,25 @@
 int main(void)
 {
     int n = get_int("Size: ");
-    for (int i = 0; i < n; i++)
+    spawn(function()
     {
-        for (int j = 0; j < n; j++)
+        while (true)
         {
-            printf("#");
+            if (n > 40)
+            {
+
+            }
         }
-        printf("\n");
-    }
+    })
+    spawn(function()
+    {
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    printf("#");
+                }
+                printf("\n");
+            }
+    })
 }
