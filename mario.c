@@ -4,12 +4,7 @@
 int main(void)
 {
     //get size of grid
-    int n;
-    do
-    {
-        n = get_int("Size: ");
-    }
-    while (n < 1);
+    int n = get_size();
 
     //print grid blocks
     for (int i = 0; i < n; i++)
@@ -20,4 +15,15 @@ int main(void)
         }
         printf("\n");
     }
+}
+
+int get_size(void)
+{
+    int n;
+    do
+    {
+        n = get_int("Size: ")
+    }
+    while (n < 1);
+    return n;
 }
