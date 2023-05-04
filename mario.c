@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <cs50.h>
 
+int get_size(void);
+void print_grid(int size);
+
+
 int main(void)
 {
     //get size of grid
@@ -9,6 +13,24 @@ int main(void)
     //print grid blocks
     print_grid(n);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 int get_size(void)
 {
@@ -20,12 +42,6 @@ int get_size(void)
     while (n < 1);
     return n;
 }
-
-
-
-
-
-
 
 void print_grid(int size)
 {
